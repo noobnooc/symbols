@@ -1,26 +1,40 @@
 :root {
-  /* color variables from https://flatuicolors.com/palette/cn */
-  --color-golden-sand: #eccc68;
-  --color-orange: #ffa502;
-  --color-lime-soap: #7bed9f;
-  --color-ufo-green: #2ed573;
-  --color-coral: #ff7f50;
-  --color-bruschetta-tomato: #ff6348;
-  --color-french-sky-blue: #70a1ff;
-  --color-clear-chill: #1e90ff;
-  --color-wild-watermelon: #ff6b81;
-  --color-watermelon: #ff4757;
-  --color-saturated-sky: #5352ed;
-  --color-bright-greek: #3742fa;
-  --color-peace: #a4b0be;
-  --color-bay-wharf: #747d8c;
+  --color-primary: #ff4757;
+  --color-primary-dark: #c5002e;
+  --color-primary-light: #ff7d84;
+  --color-secondary: #70a1ff;
+  --color-secondary-dark: #3473cb;
+  --color-secondary-light: #a6d2ff;
+  --color-text: #ffffff;
+  --color-icon: #ffffff;
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+  --color-divider: #bdbdbd;
+  --color-error: #c5002e;
+  --color-success: #2ed573;
+  --color-info: #1e90ff;
+  --color-warning: #ffa502;
   --color-white: #ffffff;
-  --color-anti-flash-white: #f1f2f6;
-  --color-grisaille: #57606f;
-  --color-prestige-blue: #57606f;
-  --color-city-lights: #dfe4ea;
-  --color-twinkle-blue: #ced6e0;
-  --color-gray: #333333;
+  --color-black: #000000;
+
+  --shadow-dark: 0 2px 4px 0 rgba(47, 53, 66, 0.1),
+    0 0 10px 0 rgba(87, 96, 111, 0.3);
+  --shadow-light: 0 2px 4px 0 rgba(47, 53, 66, 0.1),
+    0 0 10px 0 rgba(87, 96, 111, 0.15);
+
+  --radius-huge: 20px;
+  --radius-large: 10px;
+  --radius-medium: 5px;
+  --radius-small: 2px;
+
+  --dimen-huge: 50px;
+  --dimen-large: 20px;
+  --dimen-medium: 10px;
+  --dimen-small: 5px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -30,8 +44,7 @@ body {
     sans-serif, PingFangSC-Light, 'Microsoft YaHei UI', 'Microsoft YaHei';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--color-gray);
-  background-color: var(--color-city-lights);
+  color: var(--color-text-primary);
 }
 
 code {

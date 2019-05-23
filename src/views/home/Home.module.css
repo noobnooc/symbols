@@ -1,0 +1,37 @@
+.home {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainCardWrapper {
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
+}
+
+.mainCard {
+  width: 100%;
+  max-width: calc(100% - 50px);
+  margin: 0 25px;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.mainCard:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+.logo {
+  width: 200px;
+  align-self: flex-end;
+}
