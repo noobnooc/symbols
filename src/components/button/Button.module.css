@@ -1,0 +1,16 @@
+.button {
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  padding: var(--dimen-medium) var(--dimen-large);
+  border-radius: var(--dimen-small);
+  box-shadow: var(--shadow-light);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  background-color: var(--color-secondary-dark);
+  box-shadow: var(--shadow-dark);
+}

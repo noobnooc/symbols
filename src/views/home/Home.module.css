@@ -1,6 +1,7 @@
 .home {
-  width: 100vw;
+  flex: 1;
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
 }
@@ -36,11 +37,19 @@
 }
 
 .mainCardTextArea {
-  resize: horizontal;
+  resize: vertical;
   min-height: 200px;
   border: 0;
   border-radius: var(--radius-medium);
   outline: none;
   padding: var(--dimen-medium);
   font-size: 1.1em;
+}
+
+.transformLink {
+  margin: 25px;
+}
+
+.transformButton {
+  width: 100%;
 }

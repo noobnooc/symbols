@@ -1,0 +1,17 @@
+.selectMapper {
+  width: 100%;
+  max-width: 500px;
+  padding: var(--dimen-medium);
+  align-self: center;
+  margin: -10px;
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 10px 10px 30px 10px;
+  color: var(--color-text-primary);
+}
+
+.selectMapper .previewItem {
+  margin: 10px;
+}

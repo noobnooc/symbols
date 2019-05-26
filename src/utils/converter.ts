@@ -71,6 +71,10 @@ export const symbolMapperMap: Map<SymbolMapperType, string> = new Map([
   ['serif-bold-italic', '𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑬𝑻𝑼𝑽𝑾𝑿𝒀𝒁𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛'],
 ]);
 
+export function getSymbolMapperTypes(): SymbolMapperType[] {
+  return Array.from(symbolMapperMap.keys());
+}
+
 export function convertToSymbols(text: string, type: SymbolMapperType) {
   let mapper = symbolMapperMap.get(type);
 

@@ -2,8 +2,9 @@ import React, { FC } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import styles from './App.module.css';
-import { Home } from './home/Home';
+import { Home } from './home';
 import { GitHubLogo } from 'components/github';
+import { SelectMapper } from './select-mapper';
 
 const App: FC = () => {
   return (
@@ -20,7 +21,10 @@ const App: FC = () => {
             Source On GitHub
           </a>
         </header>
-        <Route path="/" exact component={Home} />
+        <main className={styles.main}>
+          <Route path="/" exact component={Home} />
+          <Route path="/select-mapper/:text" component={SelectMapper} />
+        </main>
         <footer className={styles.footer}>
           <a
             href="https://www.hardo.me"
