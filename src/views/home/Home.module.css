@@ -48,4 +48,5 @@
 .transformButton {
   width: 100%;
   padding: var(--dimen-large);
+  font-size: 1.3em;
 }

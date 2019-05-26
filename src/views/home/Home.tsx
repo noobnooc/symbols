@@ -48,7 +48,7 @@ export const Home: FC = () => {
         onClick={onLinkClick}
         to={`/select-mapper/${encodeURIComponent(text)}`}
       >
-        <Button className={styles.transformButton}>Transform to symbols</Button>
+        <Button className={styles.transformButton}>𝕋𝕣𝕒𝕟𝕤𝕗𝕠𝕣𝕞 𝕥𝕠 𝕤𝕪𝕞𝕓𝕠𝕝𝕤</Button>
       </Link>
     </div>
   );

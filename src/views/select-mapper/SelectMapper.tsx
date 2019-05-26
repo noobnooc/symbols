@@ -29,10 +29,11 @@ export const SelectMapper: FC<RouteComponentProps<SelectMapperRouteParams>> = ({
 
         return (
           <Link
+            key={type}
             className={styles.previewLink}
             to={`/reactive/${type}/${decodedText}`}
           >
-            <PreviewItem key={type} className={styles.previewItem}>
+            <PreviewItem className={styles.previewItem}>
               {convertedText}
             </PreviewItem>
           </Link>
