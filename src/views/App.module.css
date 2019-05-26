@@ -1,0 +1,50 @@
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  height: 200px;
+}
+
+.onGitHub {
+  align-self: flex-start;
+  margin: var(--dimen-medium);
+  padding: var(--dimen-small) var(--dimen-medium);
+  border-radius: var(--dimen-small);
+  box-shadow: var(--shadow-light);
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gitHubLogo {
+  margin-right: var(--dimen-small);
+  fill: var(--color-icon);
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.footer a,
+.footer a:visited {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
