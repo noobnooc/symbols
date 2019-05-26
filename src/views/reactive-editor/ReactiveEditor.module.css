@@ -34,7 +34,7 @@
 
 .mainCardTextArea {
   resize: vertical;
-  min-height: 200px;
+  min-height: 100px;
   border: 0;
   border-radius: var(--radius-medium);
   outline: none;
@@ -60,15 +60,20 @@
   background-color: var(--color-white);
   color: var(--color-secondary);
   box-shadow: var(--shadow-light);
-  padding: var(--dimen-small) var(--dimen-medium);
+  padding: var(--dimen-medium) var(--dimen-large);
   border-radius: var(--dimen-small);
   border: 0;
   cursor: pointer;
-  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, width 0.3s;
 }
 
 .copyButton:hover {
   color: var(--color-white);
   background-color: var(--color-secondary);
   box-shadow: var(--shadow-dark);
+}
+
+.copyButton.copySuccess {
+  background-color: var(--color-success);
+  color: var(--color-text);
 }

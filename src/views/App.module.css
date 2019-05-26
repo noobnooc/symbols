@@ -6,7 +6,18 @@
 
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  padding: var(--dimen-small) var(--dimen-medium);
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .onGitHub {

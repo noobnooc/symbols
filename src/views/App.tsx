@@ -1,9 +1,11 @@
 import React, { FC } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import logo from 'assets/logo.svg';
+import { GitHubLogo } from 'components/github';
 
 import styles from './App.module.css';
 import { Home } from './home';
-import { GitHubLogo } from 'components/github';
 import { SelectMapper } from './select-mapper';
 import { ReactiveEditor } from './reactive-editor';
 
@@ -12,6 +14,9 @@ const App: FC = () => {
     <Router>
       <div className={styles.app}>
         <header className={styles.header}>
+          <Link className={styles.logo} to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
           <a
             className={styles.onGitHub}
             href="https://github.com/hardo/symbols"
@@ -33,7 +38,7 @@ const App: FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            © 2019 Hardo
+            © 2019 🅗🅐🅡🅓🅞
           </a>
         </footer>
       </div>
