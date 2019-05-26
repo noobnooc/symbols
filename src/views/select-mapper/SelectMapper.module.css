@@ -12,6 +12,15 @@
   color: var(--color-text-primary);
 }
 
+.previewLink {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.previewLink:visited {
+  color: var(--color-text-primary);
+}
+
 .selectMapper .previewItem {
   margin: 10px;
 }

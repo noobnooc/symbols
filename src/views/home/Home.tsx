@@ -34,26 +34,22 @@ export const Home: FC = () => {
 
   return (
     <div className={styles.home}>
-      <div className={styles.main}>
-        <Card className={classNames(styles.mainCard)}>
-          <div className={styles.logo}>𝒮𝓎𝓂𝒷ℴ𝓁𝓈</div>
-          <textarea
-            className={styles.mainCardTextArea}
-            value={text}
-            onChange={onTextAreaChange}
-            placeholder="Input your text here..."
-          />
-        </Card>
-        <Link
-          className={styles.transformLink}
-          onClick={onLinkClick}
-          to={`/select-mapper/${encodeURIComponent(text)}`}
-        >
-          <Button className={styles.transformButton}>
-            Transform to symbols
-          </Button>
-        </Link>
-      </div>
+      <Card className={classNames(styles.mainCard)}>
+        <div className={styles.logo}>𝒮𝓎𝓂𝒷ℴ𝓁𝓈</div>
+        <textarea
+          className={styles.mainCardTextArea}
+          value={text}
+          onChange={onTextAreaChange}
+          placeholder="Input your text here..."
+        />
+      </Card>
+      <Link
+        className={styles.transformLink}
+        onClick={onLinkClick}
+        to={`/select-mapper/${encodeURIComponent(text)}`}
+      >
+        <Button className={styles.transformButton}>Transform to symbols</Button>
+      </Link>
     </div>
   );
 };

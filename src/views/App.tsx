@@ -5,6 +5,7 @@ import styles from './App.module.css';
 import { Home } from './home';
 import { GitHubLogo } from 'components/github';
 import { SelectMapper } from './select-mapper';
+import { ReactiveEditor } from './reactive-editor';
 
 const App: FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: FC = () => {
         <main className={styles.main}>
           <Route path="/" exact component={Home} />
           <Route path="/select-mapper/:text" component={SelectMapper} />
+          <Route path="/reactive/:symbol/:text" component={ReactiveEditor} />
         </main>
         <footer className={styles.footer}>
           <a

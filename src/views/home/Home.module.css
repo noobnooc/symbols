@@ -4,11 +4,6 @@
   height: 100%;
   flex-direction: column;
   justify-content: center;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 500px;
   align-self: center;
@@ -52,4 +47,5 @@
 
 .transformButton {
   width: 100%;
+  padding: var(--dimen-large);
 }

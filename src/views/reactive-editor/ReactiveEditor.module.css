@@ -1,0 +1,74 @@
+.reactiveEditor {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  padding: var(--dimen-medium);
+  align-self: center;
+  margin: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainCard {
+  width: 100%;
+  max-width: calc(100% - 50px);
+  margin: 0 25px;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: var(--color-primary);
+}
+
+.mainCard:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+.logo {
+  align-self: flex-end;
+  font-size: 2em;
+  color: var(--color-text);
+  margin-bottom: var(--dimen-medium);
+}
+
+.mainCardTextArea {
+  resize: vertical;
+  min-height: 200px;
+  border: 0;
+  border-radius: var(--radius-medium);
+  outline: none;
+  padding: var(--dimen-medium);
+  font-size: 1.1em;
+}
+
+.resultCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  margin: 25px;
+}
+
+.resultWrapper {
+  word-break: break-all;
+}
+
+.copyButton {
+  align-self: flex-end;
+  margin-top: var(--dimen-medium);
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  box-shadow: var(--shadow-light);
+  padding: var(--dimen-small) var(--dimen-medium);
+  border-radius: var(--dimen-small);
+  border: 0;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.copyButton:hover {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  box-shadow: var(--shadow-dark);
+}
