@@ -1,0 +1,15 @@
+{
+  "short_name": "𝒮𝓎𝓂𝒷ℴ𝓁𝓈",
+  "name": "Transform text into mathematical alphanumeric 𝗌𝗒𝗆𝖻𝗈𝗅𝗌.",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff4757",
+  "background_color": "#dfe4ea"
+}

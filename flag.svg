@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 300 207.5" style="enable-background:new 0 0 300 207.5;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:#ff4757;}
+  .st1{fill:#ffffff;}
+  .st2{fill:#338dc9;}
+</style>
+
+<defs>
+  <mask id="flagMask" maskUnits="userSpaceOnUse">
+    <g transform="translate(0 -300)">
+      <animateTransform attributeName="transform" type="translate" from="-300 0" to="0 0" dur="3s" begin="0s" repeatCount="indefinite"/>
+      <use xlink:href="#wave"/>
+    </g>
+  </mask>
+  <g id="wave">
+    <path fill="white" d="M300,201.7c0,0,22,11.8,50,0c27.8-11.7,50,0,50,0s26.6,12,50,0s50,0,50,0s22.9,11.7,50.1,0c27.2-11.7,50,0,50,0
+      V5.7c0,0-28.2-11.7-50,0s-50,0-50,0s-25-12.7-50,0c-23.4,11.9-50,0-50,0s-23.1-12.2-50.1,0c-29.5,13.3-50,0-50,0l0,0
+      c-1.3-0.5-28.6-11.4-49.9,0c-21.8,11.7-50,0-50,0s-25-12.7-50,0c-23.4,11.9-50,0-50,0S76.9-6.5,50,5.7C20.5,19,0,5.7,0,5.7v196
+      c0,0,22,11.8,50,0c27.8-11.7,50,0,50,0s26.6,12,50,0s50,0,50,0s22.9,11.7,50.1,0C276.7,190.2,299.3,201.3,300,201.7L300,201.7z"/>
+  </g>
+  <path id="s" d="M0,-1 0.587785,0.809017 -0.951057,-0.309017H0.951057L-0.587785,0.809017z" fill="#ffde00"/>
+  <rect id="flag" class="st0" width="300" height="207.5"/>
+</defs>
+  <use xlink:href="#flag" mask="url(#flagMask)"/>
+  <use xlink:href="#s" transform="translate(40,50) scale(24)"/>
+  <use xlink:href="#s" transform="translate(80,26) scale(8) rotate(23.036243)"/>
+  <use xlink:href="#s" transform="translate(96,42) scale(8) rotate(45.869898)"/>
+  <use xlink:href="#s" transform="translate(96,66) scale(8) rotate(69.945396)"/>
+  <use xlink:href="#s" transform="translate(80,82) scale(8) rotate(20.659808)"/>
+</svg>
