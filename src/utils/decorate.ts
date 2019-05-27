@@ -9,7 +9,7 @@ export function decorate(text: string, decorator: number) {
 }
 
 export function getDecorators(): number[] {
-  return range(768, 879);
+  return [0, ...range(768, 879)];
 }
 
 function range(start: number, end: number): number[] {
