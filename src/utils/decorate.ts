@@ -1,6 +1,4 @@
 export function decorate(text: string, decorator: number) {
-  console.log('### ', text, decorator);
-
   if (!decorator || !Number.isInteger(decorator)) {
     return text;
   }

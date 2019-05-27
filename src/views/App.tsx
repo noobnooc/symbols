@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import logo from 'assets/logo.svg';
 import { GitHubLogo } from 'components/github';
@@ -29,16 +29,19 @@ const App: FC = () => {
           </a>
         </header>
         <main className={styles.main}>
-          <Route path="/" exact component={Home} />
-          <Route path="/select-mapper/:text" component={SelectMapper} />
-          <Route
-            path="/select-decorator/:symbolType/:text"
-            component={SelectDecorator}
-          />
-          <Route
-            path="/reactive/:symbolType/:decorator/:text"
-            component={ReactiveEditor}
-          />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/select-mapper/:text" component={SelectMapper} />
+            <Route
+              path="/select-decorator/:symbolType/:text"
+              component={SelectDecorator}
+            />
+            <Route
+              path="/reactive/:symbolType/:decorator/:text"
+              component={ReactiveEditor}
+            />
+            <Route component={Home} />
+          </Switch>
         </main>
         <footer className={styles.footer}>
           <a
