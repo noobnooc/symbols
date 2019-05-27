@@ -8,6 +8,7 @@ import styles from './App.module.css';
 import { Home } from './home';
 import { SelectMapper } from './select-mapper';
 import { ReactiveEditor } from './reactive-editor';
+import { SelectDecorator } from './select-decorator';
 
 const App: FC = () => {
   return (
@@ -30,7 +31,14 @@ const App: FC = () => {
         <main className={styles.main}>
           <Route path="/" exact component={Home} />
           <Route path="/select-mapper/:text" component={SelectMapper} />
-          <Route path="/reactive/:symbol/:text" component={ReactiveEditor} />
+          <Route
+            path="/select-decorator/:symbolType/:text"
+            component={SelectDecorator}
+          />
+          <Route
+            path="/reactive/:symbolType/:decorator/:text"
+            component={ReactiveEditor}
+          />
         </main>
         <footer className={styles.footer}>
           <a

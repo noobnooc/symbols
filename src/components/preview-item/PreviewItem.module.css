@@ -5,6 +5,9 @@
   box-shadow: var(--shadow-light);
   cursor: pointer;
   transition: box-shadow 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .previewItem:hover {

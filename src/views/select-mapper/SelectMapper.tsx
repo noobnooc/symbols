@@ -3,9 +3,9 @@ import { RouteComponentProps } from 'react-router';
 
 import { getSymbolMapperTypes, convertToSymbols } from 'utils/converter';
 
-import { PreviewItem } from './PreviewItem';
 import styles from './SelectMapper.module.css';
 import { Link } from 'react-router-dom';
+import { PreviewItem } from 'components/preview-item';
 
 const MAX_PREVIEW_TEXT_LENGTH = 30;
 
@@ -18,8 +18,7 @@ export const SelectMapper: FC<RouteComponentProps<SelectMapperRouteParams>> = ({
     params: { text },
   },
 }) => {
-  let decodedText = decodeURIComponent(text);
-  let previewText = decodedText.substr(0, MAX_PREVIEW_TEXT_LENGTH);
+  let previewText = text.substr(0, MAX_PREVIEW_TEXT_LENGTH);
 
   return (
     <div className={styles.selectMapper}>
@@ -31,10 +30,11 @@ export const SelectMapper: FC<RouteComponentProps<SelectMapperRouteParams>> = ({
           <Link
             key={type}
             className={styles.previewLink}
-            to={`/reactive/${type}/${decodedText}`}
+            to={`/select-decorator/${type}/${text}`}
           >
             <PreviewItem className={styles.previewItem}>
               {convertedText}
+              <div className={styles.mapperType}>{type}</div>
             </PreviewItem>
           </Link>
         );

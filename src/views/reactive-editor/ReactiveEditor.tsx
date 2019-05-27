@@ -7,19 +7,22 @@ import { SymbolMapperType, convertToSymbols } from 'utils/converter';
 import styles from './ReactiveEditor.module.css';
 import { Card } from 'components/card';
 import classNames from 'classnames';
+import { decorate } from 'utils/decorate';
 
 const COPY_SUCCESS_NOTICE_TIMEOUT = 3000;
 
 export type ReactiveEditorParams = {
-  symbol: SymbolMapperType;
+  symbolType: SymbolMapperType;
+  decorator: string;
   text: string;
 };
 
 export const ReactiveEditor: FC<RouteComponentProps<ReactiveEditorParams>> = ({
   match: {
-    params: { symbol: symbolType, text: originText },
+    params: { symbolType, decorator: decoratorString, text: originText },
   },
 }) => {
+  let decorator = Number(decoratorString);
   let decodedText = decodeURIComponent(originText);
 
   let [text, setText] = useState(decodedText);
@@ -40,6 +43,7 @@ export const ReactiveEditor: FC<RouteComponentProps<ReactiveEditorParams>> = ({
   }, []);
 
   let convertedText = convertToSymbols(text, symbolType);
+  let decoratedText = decorate(convertedText, decorator);
 
   return (
     <div className={styles.reactiveEditor}>
@@ -54,13 +58,13 @@ export const ReactiveEditor: FC<RouteComponentProps<ReactiveEditorParams>> = ({
         />
       </Card>
       <Card className={styles.resultCard}>
-        <div className={styles.resultWrapper}>{convertedText || '𝒮𝓎𝓂𝒷ℴ𝓁𝓈'}</div>
+        <div className={styles.resultWrapper}>{decoratedText || '𝒮𝓎𝓂𝒷ℴ𝓁𝓈'}</div>
         <Clipboard
           className={classNames(styles.copyButton, {
             [styles.copySuccess]: copySuccess,
           })}
           onSuccess={onCopySuccess}
-          data-clipboard-text={convertedText}
+          data-clipboard-text={decoratedText}
         >
           {copySuccess ? 'Copy Success' : 'Copy'}
         </Clipboard>
